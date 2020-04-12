@@ -26,7 +26,7 @@ JavaScript Algorithms and Data Structures Masterclass
 3. Sliding Window
   Creates a 'window' variable, which helps to track a subset of array/string.
   E.g. if we need to find max sum of n consecutive numbers in the array, we don't have to make nested loop:
-  ```
+  ```javascript
   //Count first sum
   for(let i=0;i<n;i++){
     maxSum += arr[i];
@@ -36,6 +36,22 @@ JavaScript Algorithms and Data Structures Masterclass
     tempSum = tempSum - arr[i-num] + arr[i];
     maxSum = Math.max(maxSUm, tempSum);
   }
+  ```
 
+## Recursion
 
+  The process that calls itself.
+  Everytime the function is called, its pushed on the top of call stack. The functions below is waiting for the top function to finish.
+
+  Recursive functions should have two things:
+  1. Base case - the condition when recursion ends.
+  2. Each time function called, it should be different inputs.
+
+  ```javascript
+  //FACTORIAL SOLUTION
+  function factorial(x){
+     if (x < 0 ) return 0;
+     if (x <= 1 ) return 1;
+     return x * factorial(x-1);
+  }
   ```
