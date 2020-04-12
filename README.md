@@ -14,11 +14,10 @@ JavaScript Algorithms and Data Structures Masterclass
   Creating pointers that correspond to an index or position and move towards the beggining, end or middle based on certain condition.
   Very efficient for solving problems with minimal space complexity
   For example we searching a pair, which sum is zero:
-  ``javascript
+  ```javascript
   arr => [-2,-1,0,1,2]
   start => 0
   end => arr.length-1
-  
   If arr[start]+arr[end] > 0 => end--;
   If arr[start]+arr[end] < 0 => star++;
   If arr[start]+arr[end] == 0 => return;
