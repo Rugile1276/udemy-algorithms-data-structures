@@ -100,4 +100,11 @@ JavaScript Algorithms and Data Structures Masterclass
   4. Merge Sort
 
   Exploits the fact that arrays of length 0,1 is already sorted.
-  It decompose array into smaller array(length of 0 or 1) and then builds up new sorted array
+  It decompose array into smaller array(length of 0 or 1) and then builds up new sorted array.
+  Complexity is 0(n log n) (counts decomposition and merges)
+
+## Data Structures
+
+  1. Linked Lists
+    Consist of nodes, and each node has a value and a pointer to another node or null.
+    It has head (beginning), tail(end), length.
