@@ -90,7 +90,14 @@ JavaScript Algorithms and Data Structures Masterclass
   3. Insertion Sort
 
   Gradually creates left portion of array which is always sorted.
+  ```javascript
   E.g.: [5,3,4]
   [5] - sorted
   [3,5] - were to put 3?
   [3,4,5] - were to put 4?
+  ```
+
+  4. Merge Sort
+
+  Exploits the fact that arrays of length 0,1 is already sorted.
+  It decompose array into smaller array(length of 0 or 1) and then builds up new sorted array
