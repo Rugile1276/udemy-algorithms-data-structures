@@ -55,3 +55,17 @@ JavaScript Algorithms and Data Structures Masterclass
      return x * factorial(x-1);
   }
   ```
+
+  ## Search Algorithms
+
+  1. Linear Search
+  Look every element in the array and check if it's a value we need
+  2. Binary Search
+  Only works on sorted array. Find element in the middle, and check if it lower or higher than needed value. Take the corresponding half of array and repeat that until you find the right value,
+  ```javascript
+  //FACTORIAL SOLUTION
+  if (arr[middle] < n ) take right side of arr and repeat;
+  if (arr[middle] > n ) take left side of arr and repeat;
+  if (arr[middle] == n ) we found needed number;
+  ```
+  3.
