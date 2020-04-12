@@ -72,11 +72,13 @@ JavaScript Algorithms and Data Structures Masterclass
 ## Sorting
 
   1. Bubble Sort
+
   The largest values bubble up to the top.
   ```javascript
   if (arr[j] > arr[j+1] ) => swap!
   ```
-  2. Selection sort
+  2. Selection Sort
+
   First places smallest values in the sorted position.
   ```javascript
   if(arr[min] > arr[j]){
@@ -84,3 +86,11 @@ JavaScript Algorithms and Data Structures Masterclass
       }
   if(min !== comparableNum) => swap;
   ```
+
+  3. Insertion Sort
+
+  Gradually creates left portion of array which is always sorted.
+  E.g.: [5,3,4]
+  [5] - sorted
+  [3,5] - were to put 3?
+  [3,4,5] - were to put 4?
