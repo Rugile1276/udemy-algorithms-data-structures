@@ -69,3 +69,18 @@ JavaScript Algorithms and Data Structures Masterclass
   if (arr[middle] > n ) take left side of arr and repeat;
   if (arr[middle] == n ) we found needed number;
   ```
+## Sorting
+
+  1. Bubble Sort
+  The largest values bubble up to the top.
+  ```javascript
+  if (arr[j] > arr[j+1] ) => swap!
+  ```
+  2. Selection sort
+  First places smallest values in the sorted position.
+  ```javascript
+  if(arr[min] > arr[j]){
+        min = j;
+      }
+  if(min !== comparableNum) => swap;
+  ```
