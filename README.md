@@ -24,3 +24,18 @@ JavaScript Algorithms and Data Structures Masterclass
   ```
 
 3. Sliding Window
+  Creates a 'window' variable, which helps to track a subset of array/string.
+  E.g. if we need to find max sum of n consecutive numbers in the array, we don't have to make nested loop:
+  ```
+  //Count first sum
+  for(let i=0;i<n;i++){
+    maxSum += arr[i];
+  }
+  //Create another loop and subtract&add from the already counted maxSum
+  for(let i=0;i<n;i++){
+    tempSum = tempSum - arr[i-num] + arr[i];
+    maxSum = Math.max(maxSUm, tempSum);
+  }
+
+
+  ```
