@@ -67,6 +67,25 @@ class SinglyLinkedList {
     return newNode;
 
   }
+  get(index){
+    if((index < 0) || (index >= this.length)) return undefined;
+    var counter = 0;
+    var currNode = this.head;
+    while(index > counter){
+      currNode = currNode.next;
+      counter++;
+    }
+    return currNode;
+  }
+
+  set(val, index){
+    let node = this.get(index);
+    if(node){
+      node.val = val;
+      return true;
+    }
+    return false;
+  }
 }
 
 var l = new SinglyLinkedList ();

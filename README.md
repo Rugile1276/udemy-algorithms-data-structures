@@ -112,3 +112,5 @@ JavaScript Algorithms and Data Structures Masterclass
     pop - removes from end;
     shift - removes from beginning
     unshift - adds node to the beginning
+    get(index) - retrieve element by its position
+    set(val, index) - set value to specific index
