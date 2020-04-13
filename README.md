@@ -114,3 +114,5 @@ JavaScript Algorithms and Data Structures Masterclass
     unshift - adds node to the beginning
     get(index) - retrieve element by its position
     set(val, index) - set value to specific index
+    insert(val, index) - insert value at specific index
+    remove(index) - remove value at specific index

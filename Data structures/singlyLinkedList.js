@@ -86,6 +86,33 @@ class SinglyLinkedList {
     }
     return false;
   }
+
+  insert(val, index){
+    if(index > this.length || index < 0) return false;
+    if(index === 0) return !!this.unshift(val);
+    if(index === this.length) return !!this.push(val);
+
+    var newNode = new Node(val);
+    var prevNode = this.get(index-1);
+    var nextNode = prevNode.next;
+    newNode.next = nextNode;
+    prevNode.next = newNode;
+    this.length++;
+    return true;
+
+  }
+  remove(index){
+    if(index >= this.length || index < 0) return undefined;
+    if(index === 0) return this.shift();
+    if(index === this.length-1) return this.pop();
+
+    var prevNode = this.get(index-1);
+    var removed = prevNode.next;
+    prevNode.next = removed.next;
+    this.length--;
+    return removed;
+
+  }
 }
 
 var l = new SinglyLinkedList ();
