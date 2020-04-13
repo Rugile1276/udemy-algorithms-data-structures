@@ -108,3 +108,7 @@ JavaScript Algorithms and Data Structures Masterclass
   1. Linked Lists
     Consist of nodes, and each node has a value and a pointer to another node or null.
     It has head (beginning), tail(end), length.
+    push - adds to the end;
+    pop - removes from end;
+    shift - removes from beginning
+    unshift - adds node to the beginning
