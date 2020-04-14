@@ -108,6 +108,7 @@ JavaScript Algorithms and Data Structures Masterclass
   1. Singly Linked Lists
     Consist of nodes, and each node has a value and a pointer to another node or null.
     It has head (beginning), tail(end), length.
+    It's really fast, when you need to insert or remove from the beginning or end. But if you need to access random items, better to use arrays.
     push - adds to the end;
     pop - removes from end;
     shift - removes from beginning
@@ -117,3 +118,7 @@ JavaScript Algorithms and Data Structures Masterclass
     insert(val, index) - insert value at specific index
     remove(index) - remove value at specific index
     reverse - reverse list
+
+  2. Doubly Linked Lists
+    Consist of nodes, and each has a value and two pointers - previous and next.
+    It has head( the beginning which doesn't have previous) and tail(the end which doesn't have next)
