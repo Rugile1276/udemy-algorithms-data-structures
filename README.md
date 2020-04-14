@@ -105,7 +105,7 @@ JavaScript Algorithms and Data Structures Masterclass
 
 ## Data Structures
 
-  1. Linked Lists
+  1. Singly Linked Lists
     Consist of nodes, and each node has a value and a pointer to another node or null.
     It has head (beginning), tail(end), length.
     push - adds to the end;
@@ -116,3 +116,4 @@ JavaScript Algorithms and Data Structures Masterclass
     set(val, index) - set value to specific index
     insert(val, index) - insert value at specific index
     remove(index) - remove value at specific index
+    reverse - reverse list
