@@ -122,3 +122,5 @@ JavaScript Algorithms and Data Structures Masterclass
   2. Doubly Linked Lists
     Consist of nodes, and each has a value and two pointers - previous and next.
     It has head( the beginning which doesn't have previous) and tail(the end which doesn't have next)
+    It's fast when adding/removing from the beginning AND the end(not like the SLL), but it eats more memory to store both pointers - prev and next than SLL.
+    Good example of DLL is web browser history.

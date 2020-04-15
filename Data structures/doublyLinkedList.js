@@ -102,7 +102,38 @@ class doublyLinkedList {
   }
 
   insert(index, val){
+    if ( index < 0 || index > this.length) return false;
+    if (index === 0) return this.unshift(val);
+    if (index === this.length) return this.push(val);
 
+    var newNode = new Node(val);
+    var prevNode = this.get(index-1);
+    var nextNode = prevNode.next;
+    prevNode.next = newNode;
+    newNode.prev = prevNode;
+    newNode.next = nextNode;
+    nextNode.prev = newNode;
+
+
+    this.length++;
+    return true;
+  }
+  remove(index){
+    if( index < 0 || index >= this.length) return undefined;
+    if (index === 0) return this.shift();
+    if (index === this.length-1) return this.pop();
+
+    var prevNode = this.get(index-1);
+    var removedNode = prevNode.next;
+    var nextNode = removedNode.next;
+
+    prevNode.next = nextNode;
+    nextNode.prev = prevNode;
+    removedNode.prev = null;
+    removedNode.next = null;
+
+    this.length--;
+    return removedNode;
   }
 }
 var list = new doublyLinkedList();
