@@ -135,6 +135,27 @@ class doublyLinkedList {
     this.length--;
     return removedNode;
   }
+  reverse(){
+      var prevNode = null;
+      var currNode = this.head;
+      var nextNode = null;
+      var i = 0;
+      while(this.tail.next == null){
+          nextNode = currNode.next;
+          currNode.prev = nextNode;
+          currNode.next = prevNode;
+
+          prevNode = currNode;
+          currNode = nextNode;
+          i++;
+      }
+
+      var temp = this.head;
+      this.head = this.tail;
+      this.tail = temp;
+
+      return this;
+  }
 }
 var list = new doublyLinkedList();
 list.push(1);
