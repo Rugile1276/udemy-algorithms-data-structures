@@ -124,3 +124,7 @@ JavaScript Algorithms and Data Structures Masterclass
     It has head( the beginning which doesn't have previous) and tail(the end which doesn't have next)
     It's fast when adding/removing from the beginning AND the end(not like the SLL), but it eats more memory to store both pointers - prev and next than SLL.
     Good example of DLL is web browser history.
+
+  3. Stack
+  Last In First Out - LIFO.
+  We can use array for it and you push and pop, or unshift and shift. Push and pop is better, because we don't need to reindex. But there is no need to track all indexes, because we only need last one inserted.
