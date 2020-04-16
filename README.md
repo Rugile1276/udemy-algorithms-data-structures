@@ -126,5 +126,11 @@ JavaScript Algorithms and Data Structures Masterclass
     Good example of DLL is web browser history.
 
   3. Stack
-  Last In First Out - LIFO.
-  We can use array for it and you push and pop, or unshift and shift. Push and pop is better, because we don't need to reindex. But there is no need to track all indexes, because we only need last one inserted.
+    Last In First Out - LIFO. Examples: undo/redo, navigate trough pages back/forward. It's not build in javascript data structure.
+    3.1 We can use array for it and you push and pop, or unshift and shift. Push and pop is better, because we don't need to reindex. But there is no need to track all indexes, because we only need last one inserted.
+    3.2 We ca make it similar to to SLL. But our push and pop will be SLL unshift and shift, because it's O(1). In SLL push and pop methods are O(n) because we should iterate from head to tail.
+
+  4. Queues
+    First In First Out - FIFO. Example: printing/Task processing.
+    4.1 We can use array as well and use push and shift, or unshift and pop. Anyway with arrays we have a lot of reindexing.
+    4.2 We can make it similar to SLL. Enqueue will be as push, dequeue will be as shift(). Insert and remove is O(1);
