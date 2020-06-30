@@ -133,4 +133,33 @@ JavaScript Algorithms and Data Structures Masterclass
   4. Queues
     First In First Out - FIFO. Example: printing/Task processing.
     4.1 We can use array as well and use push and shift, or unshift and pop. Anyway with arrays we have a lot of reindexing.
-    4.2 We can make it similar to SLL. Enqueue will be as push, dequeue will be as shift(). Insert and remove is O(1);
+    4.2 We can make it similar to SLL. Enqueue will be as push, dequeue will be as shift(). Insert and remove is O(1).
+
+  5. Trees - parent/child relationship
+    Root - one entry point, top node in the tree.
+    Child - a node directly connected to another node when moving away from Root.
+    Parent - converse notion of a child.
+    Sibling - nodes that have same parent.
+    Leaf - node with no children.
+    Edge - arrow between nodes.
+    Examples: HTML DOM, file system, json files,  network routing, AI, tic tac game (shows possible options, decisions tree).
+
+    5.1 Binary tree - it has maximum two nodes.
+    5.2 Binary search trees - it has maximum two nodes and has comparable nodes - smaller numbers go to the left, bigger - to the right. Its complexity O(log n)
+
+    5.3 Traversal Tree(visit each node)
+    5.3.1 Breadth First Search(BFS) - we visit nodes horizontally (from left to right)
+    5.3.2 Depth First Search(DFS) PreOrder - we visit nodes vertically (from root till the left bottom)
+    5.3.3 Depth First Search(DFS) PostOrder -  we first visit node's left and right, and only then current node.
+    5.3.4 Depth First Search(DFS) InOrder - visit nodes in order
+    BFS and DFS have the same space complexity O(n). But BFS takes more memory, because it constructs a queue, buut it depends on tree structure.
+
+  6. Binary Heaps - each parent has at most two child nodes, sibling has no ordering, it's very compact - all children of each node are as full as they can be and left children are always filled out first.
+  BH is used to implement Priority Queues, which are commanly used as data structure.
+    6.1 MaxBinaryHeap - parent nodes are always larger than child nodes.
+    6.2 MinBinaryHeap - parent nodes are always smaller than child nodes.
+    6.3 Priority Queue - each element has a priority. Element with higher priorities are served before elements with lower priorities.
+
+  7. Graphs - have nodes and connections without parent/child relationships. It can be directed/undirected(instagram followers), weighted/unweighted(maps roads with km).
+    vertex - node
+    edge - connection

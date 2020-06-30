@@ -19,7 +19,7 @@ class BinarySearchTree {
     }else{
       var currNode = this.root;
       while(true){
-        if(currNode.val > newNode){
+        if(currNode.val > newNode.val){
           if(currNode.left === null){
             currNode.left = newNode;
             return this;
@@ -51,8 +51,55 @@ class BinarySearchTree {
     }
     return false;
   }
+  DFSPreOrder(){
+    if(this.root === null) return false;
+
+    var visited = [];
+
+    function traverse(node){
+      visited.push(node.val);
+      if(node.left !== null) traverse(node.left);
+
+      if(node.right !== null) traverse(node.right);
+    }
+    traverse(this.root);
+    return visited;
+  }
+
+   DFSPostOrder(){
+    if(this.root === null) return false;
+
+    var visited = [];
+
+    function traverse(node){
+      if(node.left !== null) traverse(node.left);
+
+      if(node.right !== null) traverse(node.right);
+      visited.push(node.val);
+    }
+    traverse(this.root);
+    return visited;
+  }
+
+     DFSInOrder(){
+    if(this.root === null) return false;
+
+    var visited = [];
+
+    function traverse(node){
+      if(node.left !== null) traverse(node.left);
+      visited.push(node.val);
+      if(node.right !== null) traverse(node.right);
+    }
+    traverse(this.root);
+    return visited;
+  }
+
 }
 
 var bst = new BinarySearchTree();
-bst.insert(1);
+bst.insert(5);
 bst.insert(2);
+bst.insert(4);
+bst.insert(6);
+bst.DFSInOrder();
